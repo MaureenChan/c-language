@@ -6,13 +6,13 @@ typedef struct
 {
     DATA ListData[MAXSIZE + 1];
     int ListLen;
-}
+}SeqListType;
 
 void SeqListInit(SeqListType *SL);
 int SeqListLength(SeqListType *SL);
-int SeqListAdd(SeqListInit *SL, DATA data);
+int SeqListAdd(SeqListType *SL, DATA data);
 int SeqListInsert(SeqListType *SL, int n, DATA data);
 int SeqListDelete(SeqListType *SL, int n);
 DATA *SeqListFindByNum(SeqListType *SL, int n);
 int SeqListFindByCont(SeqListType *SL, char *key);
-int SeqListAll(SeqListType *SL);
+void SeqListAll(SeqListType *SL);
